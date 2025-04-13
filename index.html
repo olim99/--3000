@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Сорта яблок</title>
+  <link rel="stylesheet" href="stayle.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+  <h1 data-aos="fade-down">Сорта яблок</h1>
+
+  <select id="sortSelect">
+    <option value="">Сортировать по...</option>
+    <option value="Name">Названию (A-Z)</option>
+    <option value="Color">Цвету</option>
+    <option value="Origin">Происхождению</option>
+  </select>
+
+  <input type="text" id="searchInput" placeholder="Поиск по названию..." />
+
+  <div id="appleList" class="apple-list"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1000 });</script>
+
+  <script src="apple.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
